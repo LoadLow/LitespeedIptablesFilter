@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<config>
+    <com>
+        <litespeed>
+            <filter>
+                <ls-report-folder>/tmp/lshttpd/</ls-report-folder>
+                <intervals>
+                    <!-- Interval between two ConnectionsReport analyzes (in seconds) -->
+                    <analyze-report>30</analyze-report>
+                    <!-- Interval between two writings of logs (in seconds) -->
+                    <flush-logs>5</flush-logs>
+                    <!-- Interval between two lietspeed rtreport analyzes (in millis) -->
+                    <analyze-litespeed>2500</analyze-litespeed>
+                    <!-- Interval between two writings rtreport logs (in minutes) -->
+                    <log-stats>15</log-stats>
+                </intervals>
+                <times>
+                    <!-- Time to ban an address (in minutes) -->
+                    <address-banned>10</address-banned>
+                </times>
+            </filter>
+        </litespeed>
+    </com>
+</config>
